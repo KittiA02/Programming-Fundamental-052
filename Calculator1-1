@@ -1,0 +1,20 @@
+#include <iostream>
+int main ()
+{
+    int x,y;
+    float a,b,c,d;
+    printf("Enter two numbers to calculate\n");
+    printf("First : ");
+    scanf("%d",&x);
+    printf("Second : ");
+    scanf("%d",&y);
+    
+    a=x+y;
+        printf("These two numbers' sum are : %.2f\n",a);
+    b=x-y;
+        printf("These two numbers' difference are : %.2f\n",b);
+    c=x*y;
+        printf("These two numbers' product are : %.2f\n",c);
+    d=x/y;
+        printf("These two numbers' quotient are : %.2f\n",d);
+}
