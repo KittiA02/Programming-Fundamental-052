@@ -1,0 +1,23 @@
+#include<stdio.h>
+ 
+int main()
+{   
+    int input,i,max;
+     
+     
+    while(i<3)
+    {
+        printf(" Number #%d : ", i+1);
+        scanf("%d", &input);
+        i++;
+        
+        if(i==0 || input > max)
+        {
+            max = input;
+        }
+    }
+     
+    printf("\n The maximum is %d\n\n", max);
+     
+    return 0;
+}
