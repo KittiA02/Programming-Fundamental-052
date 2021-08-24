@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a, b, x;
+    printf("Enter number : ");
+    scanf_s("%d", &x);
+    for (a = 1;a <= x;a++) 
+    {
+        for (b = 1;b <= a;b++) 
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
