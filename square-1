@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+	int n;
+	printf("Enter number : ");
+	scanf_s("%d", &n);
+	for (int x = 0;x < n;x++)
+	{
+		printf("*");
+	}
+	printf("\n");
+	for (int x = 2;x < n;x++)
+	{
+		printf("*");
+		for (int y = 2;y < n;y++)
+		{
+			printf(" ");
+		}
+		printf("*");
+		printf("\n");
+	}
+	for (int x = 0;x < n;x++)
+	{
+		printf("*");
+	}
+}
