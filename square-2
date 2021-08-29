@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+	int n,x,y;
+	printf("Enter number : ");
+	scanf_s("%d", &n);
+	for (x = 0;x < n;x++)
+	{
+		printf("*");
+	}
+	printf("\n");
+	x = 2;
+	while (x < n)
+	{
+		printf("*");
+		for (y = 2;y < n;y++)
+		{
+			printf(" ");
+		}
+		printf("*");
+		printf("\n");
+		x++;
+	}
+	x = 0;
+	while (x < n)
+	{
+		printf("*");
+		x++;
+	}
+}
