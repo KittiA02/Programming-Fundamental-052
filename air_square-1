@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+    int squareSize, r, c;
+    printf("  Enter number for square size : \n");
+    scanf_s("%d", &squareSize);
+
+    for (r = 0; r < squareSize; r++)
+    {
+        if (r == 0 || r == squareSize - 1)
+        {
+            printf("\t*");
+            for (c = 0; c < squareSize - 1; c++)
+            {
+                printf(" *");
+            }
+            printf("\n");
+            continue;
+        }
+        printf("\t* ");
+
+        for (c = 0; c < squareSize - 2; c++)
+        {
+            printf("  ");
+        }
+        printf("*\n");
+    }
+    return 0;
+}
