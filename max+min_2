@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    int i = 1, max = 0, min = 1000, sum, input;
+    while (i < 4)
+    {
+        printf("Number #%d : ", i);
+        scanf_s("%d", &input);
+        if (input > max)
+            max = input;
+        if (input < min)
+            min = input;
+        i++;
+    }
+    sum = max + min;
+    printf("Sum of max number and min number are: %d", sum);
+}
