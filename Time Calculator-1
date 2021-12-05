@@ -1,0 +1,15 @@
+#include <iostream>
+#include <stdio.h>
+
+int main()
+{
+    int input = 0, hour = 0, minute = 0, sec = 0;
+    printf("Enter time to calculate (sec): ");
+    scanf_s("%d", &input);
+
+    hour = input / 3600;
+    minute = (input - (hour * 3600)) / 60;
+    sec = input - ((hour * 3600) + (minute * 60));
+
+    printf("\n The time is \n : %d:%d:%d  :\n", hour, minute, sec);
+}
