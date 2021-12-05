@@ -1,0 +1,32 @@
+#include <iostream>
+#include <stdio.h>
+
+int hour = 0, minute = 0, sec = 0;
+int cal_hour(int x) {
+    hour = x / 3600;
+    return hour;
+}
+int cal_minute(int x) {
+    cal_hour(x);
+    minute = (x - (hour * 3600)) / 60;
+    return minute;
+}
+int cal_sec(int x) {
+    cal_hour(x);
+    cal_minute(x);
+    sec = x - ((hour * 3600) + (minute * 60));
+    return sec;
+}
+
+int main()
+{
+    int input = 0;
+    printf("Enter time to calculate (sec): ");
+    scanf_s("%d", &input);
+
+    cal_hour(input);
+    cal_minute(input);
+    cal_sec(input);
+
+    printf("\n The time is \n : %d:%d:%d  :\n", hour, minute, sec);
+}
