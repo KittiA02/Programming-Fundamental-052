@@ -1,0 +1,27 @@
+#include <iostream>
+#include <stdio.h>
+
+int max = 0;
+int max_num(int x, int y) {
+    if (x > y) {
+        max = x;
+        return max;
+    }
+    else {
+        max = y;
+        return max;
+    }
+}
+
+int main()
+{
+    int input1, input2;
+    printf("Enter number 1: ");
+    scanf_s("%d", &input1);
+    printf("Enter number 2: ");
+    scanf_s("%d", &input2);
+    
+    max_num(input1, input2);
+
+    printf("%d is more.", max);
+}
