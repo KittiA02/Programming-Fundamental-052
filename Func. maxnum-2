@@ -1,0 +1,26 @@
+#include <iostream>
+#include <stdio.h>
+
+int max = 0;
+int max_num(int x, int y) {
+    switch(x > y) {
+    case 1:
+        return max = x;
+        break;
+    default:
+        return max = y;
+    }
+}
+
+int main()
+{
+    int input1, input2;
+    printf("Enter number 1: ");
+    scanf_s("%d", &input1);
+    printf("Enter number 2: ");
+    scanf_s("%d", &input2);
+
+    max_num(input1, input2);
+
+    printf("\t%d is more.", max);
+}
